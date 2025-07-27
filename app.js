@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.vacation').before(price)//manipulasi dom before di atas after dibawh atau setelah li atau di atas li pertama
     $('.vacation').prepend(price1)//manipulasi dom before di atas after dibawh atau setelah li atau di atas li pertama
 
-        price2  .appendTo($('.vacation'));//variabel price tolong tambahkan ke klas ,vacation sebelumnya atau di no10 kebalikan vacation menambhkan elemn pricenya == hasilnya di bawaah clas vacation
+        price2.appendTo($('.vacation'));//variabel price tolong tambahkan ke klas ,vacation sebelumnya atau di no10 kebalikan vacation menambhkan elemn pricenya == hasilnya di bawaah clas vacation
 
     //get
     console.log($('.akane').text())
@@ -23,12 +23,12 @@ $(document).ready(function () {
     //set
     $('.koutan').text('kouchh')
     $('.hell').html('<em>hellboy</em>')
-    $('.input').val(123)
+    $('.input').val(123) //val mengambil data yang diinput pengguna pada form html
 
     //remove
     $('.hello').remove()//hapus dengan anakannya
     $('.world').empty()
-    
+
     //btn
     $('button').click(function(){
         $('p').toggle() //togle untuk menyembunyikan dan menampilkan

@@ -25,6 +25,10 @@ $(document).ready(function () {
     $('.hell').html('<em>hellboy</em>')
     $('.input').val(123)
 
+    //remove
+    $('.hello').remove()//hapus dengan anakannya
+    $('.world').empty()
+    
     //btn
     $('button').click(function(){
         $('p').toggle() //togle untuk menyembunyikan dan menampilkan

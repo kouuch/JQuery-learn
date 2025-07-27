@@ -9,6 +9,6 @@ $(document).ready(function () {
     $('button').click(function(){
         $('p').toggle() //togle untuk menyembunyikan dan menampilkan
         $('li').text('Kokoroshi')//pas di klik maka akan li berubah jadi kokoroshi
-        $('#destinations').css('background-color', 'tomato')
+        $('#destinations').css('background-color', 'tomato') //saat di click maka semua elemen <li> di dalam object yang memiliki id = destinations akan memiliki warna latar kuning.
     })
 });

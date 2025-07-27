@@ -20,7 +20,11 @@ $(document).ready(function () {
     console.log($('.akane').html())
     console.log($('.input').val())
 
-    
+    //set
+    $('.koutan').text('kouchh')
+    $('.hell').html('<em>hellboy</em>')
+    $('.input').val(123)
+
     //btn
     $('button').click(function(){
         $('p').toggle() //togle untuk menyembunyikan dan menampilkan

@@ -78,6 +78,34 @@ $(document).ready(function () {
         });
     })
 
+    //manipulasi css JQuery
+    $('.jhon').addClass('kuning');
+
+    $('#changecolor').on('click', function(){
+        $('.hell').removeClass('hijau');
+        $('.hell').toggleClass('tomato');
+    });
+
+
+    $('#changecolortomato').on('click', function(){
+        $('.hell').removeClass('hijau');
+        $('.hell').addClass('tomato');
+    });
+    $('#changecolorgrenn').on('click', function(){
+        $('.hell').removeClass('tomato');
+        $('.hell').addClass('hijau');
+    });
+
+    //aanimate
+    $('#ftsize').on('click', function(){
+        $('.hell').removeClass('tomato');
+        $('.hell').removeClass('hijau');
+        $('.hell').animate({
+            marginLeft: 100,
+            fontSize : 100
+        });
+    });
+
     //btn
     $('#clickme').click(function () {
         $('p').toggle() //togle untuk menyembunyikan dan menampilkan

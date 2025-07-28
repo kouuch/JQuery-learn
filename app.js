@@ -13,7 +13,7 @@ $(document).ready(function () {
     $('.vacation').before(price)//manipulasi dom before di atas after dibawh atau setelah li atau di atas li pertama
     $('.vacation').prepend(price1)//manipulasi dom before di atas after dibawh atau setelah li atau di atas li pertama
 
-        price2.appendTo($('.vacation'));//variabel price tolong tambahkan ke klas ,vacation sebelumnya atau di no10 kebalikan vacation menambhkan elemn pricenya == hasilnya di bawaah clas vacation
+    price2.appendTo($('.vacation'));//variabel price tolong tambahkan ke klas ,vacation sebelumnya atau di no10 kebalikan vacation menambhkan elemn pricenya == hasilnya di bawaah clas vacation
 
     //get
     console.log($('.akane').text())
@@ -29,8 +29,36 @@ $(document).ready(function () {
     $('.hello').remove()//hapus dengan anakannya
     $('.world').empty()
 
+    //eventhandler tebak angka
+    $('#gass').on('click', function () {
+        let kesempatan = 3
+        const angka = Math.floor(Math.random() * 10) + 1
+
+        while (kesempatan > 0) {
+            let tebak = prompt(`tebak angka dari 1-10 \n anda mempunyai 3 kesempatan`)
+
+            if (isNaN(tebak) || tebak < 1 || tebak > 10) {
+                alert(`masukan angka yang valid 1-10`)
+                continue
+            }
+
+            if (tebak == angka) {
+                alert(`Selamat tebakan anda benar`)
+                break
+            } else if (tebak < angka) {
+                alert(`Angak yang anda masukan terlalu kecil`)
+            } else {
+                alert(`angka yang anda masukan terlalu besar`)
+            }
+            kesempatan--
+        }
+        if(kesempatan === 0){
+            alert(`kesempatan anda habis ! angka yang benar adalah ${angka}`)
+        }
+    })
+
     //btn
-    $('button').click(function(){
+    $('#clickme').click(function () {
         $('p').toggle() //togle untuk menyembunyikan dan menampilkan
         $('li').text('Kokoroshi')//pas di klik maka akan li berubah jadi kokoroshi
         $('#destinations').css('background-color', 'tomato') //saat di click maka semua elemen <li> di dalam object yang memiliki id = destinations akan memiliki warna latar kuning.

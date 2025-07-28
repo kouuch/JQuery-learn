@@ -63,6 +63,17 @@ $(document).ready(function () {
         alert(`anda telah menghapus list game`)
     })
 
+    //efecct Jquery
+    $('#btnhide').on('click', function (){
+        $('#up').hide();
+    })
+
+    $('#btnfadeout').on('click', function (){
+        $('#up').fadeOut(2000);
+    })
+
+    
+
     //btn
     $('#clickme').click(function () {
         $('p').toggle() //togle untuk menyembunyikan dan menampilkan

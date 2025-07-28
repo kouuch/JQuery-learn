@@ -52,9 +52,15 @@ $(document).ready(function () {
             }
             kesempatan--
         }
-        if(kesempatan === 0){
+        if (kesempatan === 0) {
             alert(`kesempatan anda habis ! angka yang benar adalah ${angka}`)
         }
+    })
+
+    //event handler menghapus
+    $('#hapusgame').on('click', function () {
+        $('#up').remove()
+        alert(`anda telah menghapus list game`)
     })
 
     //btn

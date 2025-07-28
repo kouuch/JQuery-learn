@@ -96,15 +96,15 @@ $(document).ready(function () {
         $('.hell').addClass('hijau');
     });
 
-    //aanimate
-    $('#ftsize').on('click', function(){
-        $('.hell').removeClass('tomato');
-        $('.hell').removeClass('hijau');
-        $('.hell').animate({
-            marginLeft: 100,
-            fontSize : 100
-        });
-    });
+    //animate
+    // $('#ftsize').on('click', function(){
+    //     $('.hell').removeClass('tomato');
+    //     $('.hell').removeClass('hijau');
+    //     $('.hell').animate({
+    //         marginLeft: 100,
+    //         fontSize : 100
+    //     });
+    // });
 
 
     //animate dengan logika seperti toggle
@@ -128,7 +128,7 @@ $(document).ready(function () {
             });
         }
     });
-    
+
     //btn
     $('#clickme').click(function () {
         $('p').toggle() //togle untuk menyembunyikan dan menampilkan

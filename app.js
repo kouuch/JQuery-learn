@@ -106,6 +106,29 @@ $(document).ready(function () {
         });
     });
 
+
+    //animate dengan logika seperti toggle
+    $('#ftsize').on('click', function () {
+        const box = $('.hell');
+    
+        // Hapus class warna setiap kali
+        box.removeClass('tomato hijau');
+    
+        if (box.hasClass('besar')) {
+            // Jika sudah besar, kecilkan kembali
+            box.removeClass('besar').animate({
+                marginLeft: 0,
+                fontSize: 16
+            });
+        } else {
+            // Jika kecil, besarkan
+            box.addClass('besar').animate({
+                marginLeft: 100,
+                fontSize: 100
+            });
+        }
+    });
+    
     //btn
     $('#clickme').click(function () {
         $('p').toggle() //togle untuk menyembunyikan dan menampilkan

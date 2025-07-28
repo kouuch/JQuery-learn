@@ -72,7 +72,11 @@ $(document).ready(function () {
         $('#up').fadeOut(2000);
     })
 
-    
+    $('#toggelbtn').on('click', function (){
+        $('#up').animate({
+            marginLeft: 100
+        });
+    })
 
     //btn
     $('#clickme').click(function () {
